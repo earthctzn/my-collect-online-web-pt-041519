@@ -3,6 +3,6 @@ def my_collect(collection)
   new_collection = []
   while index < collection.length 
   new_collection << yield(collection)
+  index += 1
   end
-  index += 1 
 end
